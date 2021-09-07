@@ -8,6 +8,7 @@ const Router = () => {
         <HashRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={Profile} />
+                <Route exact path="/profile" component={Profile} />
                 <Route component={PageNotFound} />
             </Switch>
         </HashRouter>
