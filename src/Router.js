@@ -5,7 +5,7 @@ import Profile from './components/profile/Profile'
 
 const Router = () => {
     return(
-        <HashRouter>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={Profile} />
                 <Route component={PageNotFound} />
