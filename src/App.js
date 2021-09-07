@@ -93,8 +93,15 @@ function App() {
             </ul>
           </div>
         </div>
-
+        {/* End Modules */}
       </div>
+
+      <footer className="row d-flex align-items-center">
+        <div className="col p-5 text-secondary">
+          <p>Bogotá - Colombia <br />
+          © Copyright 2020 | All rights reserved.</p>
+        </div>
+      </footer>
 
     </div>
   );
