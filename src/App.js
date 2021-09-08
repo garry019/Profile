@@ -5,7 +5,6 @@ function App() {
 
   useEffect(() => {
     $(document).on('wheel', function(e) {
-      e.preventDefault();
       $('html, body').stop(true).animate({
         scrollTop: (e.originalEvent.deltaY > 0 ? '+=' : '-=') + $(window).height() + 'px'
       });
