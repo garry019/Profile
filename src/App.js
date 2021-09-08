@@ -1,6 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import $ from 'jquery';
 
 function App() {
+
+  useEffect(() => {
+    $(document).on('wheel', function(e) {
+      e.preventDefault();
+      $('html, body').stop(true).animate({
+        scrollTop: (e.originalEvent.deltaY > 0 ? '+=' : '-=') + $(window).height() + 'px'
+      });
+    });
+  },[])
+
   return (
     <div className="App container-fluid">
       <div className="row d-flex align-items-center module">
@@ -96,7 +107,7 @@ function App() {
         {/* End Modules */}
       </div>
 
-      <footer className="row d-flex align-items-center">
+      <footer className="row d-flex align-items-center module">
         <div className="col p-5 text-secondary">
           <p>Bogotá - Colombia <br />
           © Copyright 2020 | All rights reserved.</p>
