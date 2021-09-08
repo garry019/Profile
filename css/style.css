@@ -1,6 +1,12 @@
 body{
     background-color: aliceblue;
     text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+small{
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 100;
 }
 .module{
     min-height: 100vh;
