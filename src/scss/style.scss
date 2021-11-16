@@ -1,0 +1,11 @@
+$main-dark: #212529;
+body{
+    background-color: aliceblue;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+small{
+    font-family: 'EB Garamond', serif;
+    font-weight: 100;
+}
+@import "./modules.scss";

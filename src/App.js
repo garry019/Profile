@@ -1,25 +1,30 @@
-import React, {useEffect} from 'react';
-import $ from 'jquery';
+import React from 'react';
+import Mystats from './components/Mystats';
+/* import { useDispatch, useSelector } from 'react-redux';
+import { Incrementar, ChangeDescription } from './reducers/itemReducer'; */
 
 function App() {
+  /* const state = useSelector( state => state);
+  const dispatch = useDispatch();
 
-  useEffect(() => {
-    $(document).on('wheel', function(e) {
-      $('html, body').stop(true).animate({
-        scrollTop: (e.originalEvent.deltaY > 0 ? '+=' : '-=') + $(window).height() + 'px'
-      });
-    });
-  },[])
+  const example = () => {
+    dispatch(Incrementar(5));
+    dispatch(ChangeDescription('Descripcion Cambiada'));
+  } */
 
   return (
     <div className="App container-fluid">
-      <div className="row d-flex align-items-center module">
+
+      <div id={'home'} className="row d-flex align-items-center module">
         <div className="col">
-          <h1>Gabriel Calderón <br /> <small className="text-secondary"> Full Stack Web Developer </small> </h1>
+          <h1>GABRIEL CALDERÓN<br /><small className="text-secondary">Full Stack Web Developer</small> </h1>
+          {/*  <button onClick={() => example()}>Click</button> <br />
+          {state.ItemReducer.nombre} | {state.ItemReducer.cantidad} | {state.ItemReducer.precio} <br />
+          {state.CategoryReducer.descripcion} */}
         </div>
       </div>
 
-      <div className="row d-flex align-items-center justify-content-center module module-secondary text-light">
+      <div id={'disciplines'} className="row d-flex align-items-center justify-content-center module module-secondary text-light">
         <div className="col">
           <div className="mb-4">
             <h1>Disciplines <br /> <small className="text-secondary"> Overview </small> </h1>
@@ -35,9 +40,9 @@ function App() {
         </div>
       </div>
 
-      <div className="row d-flex align-items-center justify-content-center module">
+      <div id={'software'} className="row d-flex align-items-center justify-content-center module">
         <div className="col">
-        <div className="mb-4">
+          <div className="mb-4">
             <h1>Software <br /> <small className="text-secondary"> Overview </small> </h1>
           </div>
           <div>
@@ -57,8 +62,7 @@ function App() {
         </div>
       </div>
 
-      <div className="row d-flex align-items-center justify-content-center module module-secondary text-light">
-
+      <div id={'more'} className="row d-flex align-items-center justify-content-center module module-secondary text-light">
         <div className="col-12 col-sm mt-4 mb-4">
           <div className="mb-4">
             <h1>Programming<br /><small className="text-secondary">Languages</small></h1>
@@ -73,7 +77,6 @@ function App() {
             </ul>
           </div>
         </div>
-
         <div className="col-12 col-sm mt-4 mb-4">
           <div className="mb-4">
             <h1>Framework<br /><small className="text-secondary">Front & Back-End</small></h1>
@@ -88,7 +91,6 @@ function App() {
             </ul>
           </div>
         </div>
-
         <div className="col col-sm mt-4 mb-4">
           <div className="mb-4">
             <h1>Data Bases<br /><small className="text-secondary">Languages</small></h1>
@@ -106,13 +108,14 @@ function App() {
         {/* End Modules */}
       </div>
 
-      <footer className="row d-flex align-items-center module">
+      <footer className="row d-flex align-items-center">
         <div className="col p-5 text-secondary">
           <p>Bogotá - Colombia <br />
-          © Copyright 2020 | All rights reserved.</p>
+            © Copyright 2020 | All rights reserved.</p>
         </div>
       </footer>
 
+      <Mystats />
     </div>
   );
 }
