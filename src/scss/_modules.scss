@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'myFontBold';
+    src: url("../fonts/brandon-grotesque-black.otf") format("truetype");
+}
+@font-face {
+    font-family: 'myFontLight';
+    src: url("../fonts/brandon-grotesque-light.otf") format("truetype");
+}
+$main-font: 'myFontBold', sans-serif;
+$sub-font: 'myFontLight', sans-serif;
+$theme-colors:(
+    "main": rgb(4, 70, 100)
+);
+
+@mixin home-module{
+    background: map-get($map: $theme-colors, $key: "main");
+    color: #ffffff;
+    h1{
+        font-family: $main-font;
+        position: relative;
+        z-index: 100;
+        small{
+            font-family: $sub-font;
+            font-size: 0.3em;
+            color: white;
+        }
+    }
+    .btn{
+        background-color: white;
+        border: none;
+        color: map-get($map: $theme-colors, $key: "main");
+        font-family: $sub-font;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 2;
+        transition: 0.25s ease all;
+
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    .decor-1{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
+.module{
+    min-height: 100vh;
+}
+
+.module h1{
+    font-size: 4em;
+    line-height: 0.5;
+}
+
+.module h1 small{
+    font-size: 0.3em;
+}
+
+.module-secondary{
+    background-color: $main-dark;
+}
+
+.module .list-group-item{
+    background-color: transparent;
+}
+
+.module-secondary .list-group-item{
+    background-color: transparent;
+    color: white;
+}
+
+.myStats{
+    background-color:darkslategrey;
+    color: white;
+    z-index: 2;
+}
+
+#home{
+    @include home-module;
+}
+#home.row > *{
+    padding-left: 0;
+    padding-right: 0;
+}

@@ -8,4 +8,6 @@ small{
     font-family: 'EB Garamond', serif;
     font-weight: 100;
 }
-@import "./modules.scss";
+
+@import "./_buttons.scss";
+@import "./_modules.scss";

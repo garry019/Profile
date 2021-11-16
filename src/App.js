@@ -1,5 +1,7 @@
 import React from 'react';
 import Mystats from './components/Mystats';
+import Decor_1 from './images/decor-1.svg';
+
 /* import { useDispatch, useSelector } from 'react-redux';
 import { Incrementar, ChangeDescription } from './reducers/itemReducer'; */
 
@@ -13,15 +15,17 @@ function App() {
   } */
 
   return (
-    <div className="App container-fluid">
+    <div className="container-fluid">
 
       <div id={'home'} className="row d-flex align-items-center module">
         <div className="col">
-          <h1>GABRIEL CALDERÓN<br /><small className="text-secondary">Full Stack Web Developer</small> </h1>
+          <h1>GABRIEL CALDERÓN<br /><small>Full Stack Web Developer</small> </h1><br />
+          <button className="btn btn-primary">Let's Talk!</button>
           {/*  <button onClick={() => example()}>Click</button> <br />
           {state.ItemReducer.nombre} | {state.ItemReducer.cantidad} | {state.ItemReducer.precio} <br />
           {state.CategoryReducer.descripcion} */}
         </div>
+        <img className="decor-1" src={Decor_1} alt="" />
       </div>
 
       <div id={'disciplines'} className="row d-flex align-items-center justify-content-center module module-secondary text-light">
