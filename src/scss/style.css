@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'myFontBold';
+  src: url("../fonts/brandon-grotesque-black.otf") format("truetype");
+}
+
+@font-face {
+  font-family: 'myFontLight';
+  src: url("../fonts/brandon-grotesque-light.otf") format("truetype");
+}
+
+body {
+  background-color: aliceblue;
+  text-align: center;
+  font-family: 'myFontBold';
+  -webkit-transition: -webkit-transform 1s ease-out;
+  transition: -webkit-transform 1s ease-out;
+  transition: transform 1s ease-out;
+  transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+body h1 {
+  text-transform: uppercase;
+}
+
+body a {
+  text-decoration: none;
+  color: #999999;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+body a:hover {
+  color: white;
+}
+
+small {
+  font-family: 'myFontLight';
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: transparent;
+  text-align: center;
+  opacity: 1;
+}
+
+nav ul {
+  background-color: transparent;
+  list-style: none;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+nav ul li {
+  font-family: "myFontBold", sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #fff;
+  margin: 0 15px 0 15px;
+  text-align: center;
+}
+
+nav .active {
+  color: white;
+}
+
+.btn {
+  border-radius: 30px;
+}
+
+.module {
+  min-height: 100vh;
+}
+
+.module h1 {
+  font-size: 4em;
+  line-height: 0.8;
+}
+
+.module h1 small {
+  font-size: 0.3em;
+}
+
+.module-secondary {
+  background-color: #212529;
+}
+
+.module .list-group-item {
+  background-color: transparent;
+}
+
+.module-secondary .list-group-item {
+  background-color: transparent;
+  color: white;
+}
+
+#home {
+  background: #212529;
+  color: #ffffff;
+}
+
+#home h1 {
+  font-family: "myFontBold", sans-serif;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+
+#home h1 small {
+  opacity: 1;
+  font-family: "myFontLight", sans-serif;
+  font-size: 0.3em;
+  color: white;
+}
+
+#home .btn {
+  opacity: 1;
+  background-color: white;
+  border: none;
+  color: #212529;
+  font-family: "myFontLight", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+
+#home .btn:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#home .decor-1 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+#loading-page {
+  background: #212529;
+  color: #ffffff;
+}
+
+#loading-page h1 {
+  font-family: "myFontBold", sans-serif;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+
+#loading-page h1 small {
+  opacity: 1;
+  font-family: "myFontLight", sans-serif;
+  font-size: 0.3em;
+  color: white;
+}
+
+#loading-page .btn {
+  opacity: 1;
+  background-color: white;
+  border: none;
+  color: #212529;
+  font-family: "myFontLight", sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 0.25s ease all;
+  transition: 0.25s ease all;
+}
+
+#loading-page .btn:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+#loading-page .decor-1 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 1;
+}
+
+#home.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 576px) {
+  .module h1 {
+    line-height: 0.5;
+  }
+}
+
+.about-content {
+  background-color: #212529;
+  padding-top: 120px;
+}
+
+.about-content h1 {
+  color: white;
+}
+
+.portfolio-content {
+  background-color: #212529;
+  padding-top: 120px;
+}
+
+.portfolio-content h1 {
+  color: white;
+}
+
+.contact-content {
+  background-color: #212529;
+  padding-top: 120px;
+}
+
+.contact-content h1 {
+  color: white;
+}
+
+footer {
+  background-color: transparent;
+  text-align: center;
+}
+
+footer ul {
+  background-color: transparent;
+  list-style: none;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+footer ul li {
+  font-family: "myFontBold", sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #212529;
+  margin: 0 15px 0 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=style.css.map */

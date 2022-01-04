@@ -1,0 +1,19 @@
+footer{
+    background-color: transparent;
+    text-align: center;
+    ul{
+        background-color: transparent;
+        list-style: none;
+        margin: 0 auto;
+        padding: 15px 0 15px 0;
+        text-align: center;
+        li{
+            font-family: $main-font;
+            display: inline-flex;
+            color: $main-dark;
+            margin: 0 15px 0 15px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    }
+}

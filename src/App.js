@@ -1,11 +1,23 @@
-import React from 'react';
-import Mystats from './components/Mystats';
-import Decor_1 from './images/decor-1.svg';
+import React, {useEffect} from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+//import $ from 'jquery'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './components/Home.js'
+import About from './components/About'
+import Portfolio from './components/Portfolio'
+import Contact from './components/Contact';
+
 
 /* import { useDispatch, useSelector } from 'react-redux';
 import { Incrementar, ChangeDescription } from './reducers/itemReducer'; */
 
 function App() {
+
+  useEffect(() => {
+    //...
+  }, []);
+
   /* const state = useSelector( state => state);
   const dispatch = useDispatch();
 
@@ -15,112 +27,21 @@ function App() {
   } */
 
   return (
-    <div className="container-fluid">
+    <BrowserRouter>
+      <div className="container-fluid">
+        <Navbar />
+        
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/about-me' element={<About />} />
+          <Route exact path='/portfolio' element={<Portfolio />} />
+          <Route exact path='/contact' element={<Contact />} />
+        </Routes>
 
-      <div id={'home'} className="row d-flex align-items-center module">
-        <div className="col">
-          <h1>GABRIEL CALDERÓN<br /><small>Full Stack Web Developer</small> </h1><br />
-          <button className="btn btn-primary">Let's Talk!</button>
-          {/*  <button onClick={() => example()}>Click</button> <br />
-          {state.ItemReducer.nombre} | {state.ItemReducer.cantidad} | {state.ItemReducer.precio} <br />
-          {state.CategoryReducer.descripcion} */}
-        </div>
-        <img className="decor-1" src={Decor_1} alt="" />
+        <Footer />
       </div>
-
-      <div id={'disciplines'} className="row d-flex align-items-center justify-content-center module module-secondary text-light">
-        <div className="col">
-          <div className="mb-4">
-            <h1>Disciplines <br /> <small className="text-secondary"> Overview </small> </h1>
-          </div>
-          <div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">Illustrating</li>
-              <li className="list-group-item">Design</li>
-              <li className="list-group-item">Animation</li>
-              <li className="list-group-item">Code</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id={'software'} className="row d-flex align-items-center justify-content-center module">
-        <div className="col">
-          <div className="mb-4">
-            <h1>Software <br /> <small className="text-secondary"> Overview </small> </h1>
-          </div>
-          <div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">Photoshop</li>
-              <li className="list-group-item">Illustrator</li>
-              <li className="list-group-item">After Effects</li>
-              <li className="list-group-item">Animate</li>
-              <li className="list-group-item">Z-Brush</li>
-              <li className="list-group-item">Blender</li>
-              <li className="list-group-item">Unreal Engine</li>
-              <li className="list-group-item">Unity</li>
-              <li className="list-group-item">Visual Studio</li>
-              <li className="list-group-item">Git & GitHub</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div id={'more'} className="row d-flex align-items-center justify-content-center module module-secondary text-light">
-        <div className="col-12 col-sm mt-4 mb-4">
-          <div className="mb-4">
-            <h1>Programming<br /><small className="text-secondary">Languages</small></h1>
-          </div>
-          <div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">HTML</li>
-              <li className="list-group-item">CSS</li>
-              <li className="list-group-item">PHP</li>
-              <li className="list-group-item">Javascript</li>
-              <li className="list-group-item">Python</li>
-            </ul>
-          </div>
-        </div>
-        <div className="col-12 col-sm mt-4 mb-4">
-          <div className="mb-4">
-            <h1>Framework<br /><small className="text-secondary">Front & Back-End</small></h1>
-          </div>
-          <div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">Laravel</li>
-              <li className="list-group-item">Angular</li>
-              <li className="list-group-item">React</li>
-              <li className="list-group-item">Vue</li>
-              <li className="list-group-item">DJango</li>
-            </ul>
-          </div>
-        </div>
-        <div className="col col-sm mt-4 mb-4">
-          <div className="mb-4">
-            <h1>Data Bases<br /><small className="text-secondary">Languages</small></h1>
-          </div>
-          <div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">SQL</li>
-              <li className="list-group-item">MySQL</li>
-              <li className="list-group-item">PostgreSQL</li>
-              <li className="list-group-item">MongoDB</li>
-              <li className="list-group-item">Redis</li>
-            </ul>
-          </div>
-        </div>
-        {/* End Modules */}
-      </div>
-
-      <footer className="row d-flex align-items-center">
-        <div className="col p-5 text-secondary">
-          <p>Bogotá - Colombia <br />
-            © Copyright 2020 | All rights reserved.</p>
-        </div>
-      </footer>
-
-      <Mystats />
-    </div>
+    </BrowserRouter>
   );
 }
 
