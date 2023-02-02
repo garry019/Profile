@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.js": "/profile/static/js/main.8b4b5bc4.chunk.js",
-    "main.js.map": "/profile/static/js/main.8b4b5bc4.chunk.js.map",
-    "runtime-main.js": "/profile/static/js/runtime-main.d600539d.js",
-    "runtime-main.js.map": "/profile/static/js/runtime-main.d600539d.js.map",
-    "static/js/2.0206b874.chunk.js": "/profile/static/js/2.0206b874.chunk.js",
-    "static/js/2.0206b874.chunk.js.map": "/profile/static/js/2.0206b874.chunk.js.map",
-    "index.html": "/profile/index.html",
-    "static/js/2.0206b874.chunk.js.LICENSE.txt": "/profile/static/js/2.0206b874.chunk.js.LICENSE.txt"
+    "main.css": "/garry019.github.io/profile/static/css/main.485b7458.css",
+    "main.js": "/garry019.github.io/profile/static/js/main.6698d0d0.js",
+    "static/media/brandon-grotesque-light.otf": "/garry019.github.io/profile/static/media/brandon-grotesque-light.95ad7c074ed2d68ee886.otf",
+    "static/media/javascript-cert.png": "/garry019.github.io/profile/static/media/javascript-cert.35cc64688e72e5f00bb5.png",
+    "static/media/full-stack-cert.png": "/garry019.github.io/profile/static/media/full-stack-cert.23e03833fa833dd9d53d.png",
+    "static/media/big-data.png": "/garry019.github.io/profile/static/media/big-data.7b5086c66ad56f8417a3.png",
+    "static/media/python-cert.png": "/garry019.github.io/profile/static/media/python-cert.c63d7a22c9feb3fc185b.png",
+    "static/media/Orbitron-Medium.ttf": "/garry019.github.io/profile/static/media/Orbitron-Medium.9a70c40dbb1533188a39.ttf",
+    "static/media/wordpress-bw.jpg": "/garry019.github.io/profile/static/media/wordpress-bw.db2313f18e9893a1126d.jpg",
+    "static/media/react-bw.jpg": "/garry019.github.io/profile/static/media/react-bw.0d2ec950f68dff86d96f.jpg",
+    "static/media/threejs.jpg": "/garry019.github.io/profile/static/media/threejs.8efae5992c41f37060c6.jpg",
+    "static/media/nodejs-bw.jpg": "/garry019.github.io/profile/static/media/nodejs-bw.c98cbfc41d380feb7bec.jpg",
+    "index.html": "/garry019.github.io/profile/index.html",
+    "main.485b7458.css.map": "/garry019.github.io/profile/static/css/main.485b7458.css.map",
+    "main.6698d0d0.js.map": "/garry019.github.io/profile/static/js/main.6698d0d0.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.d600539d.js",
-    "static/js/2.0206b874.chunk.js",
-    "static/js/main.8b4b5bc4.chunk.js"
+    "static/css/main.485b7458.css",
+    "static/js/main.6698d0d0.js"
   ]
 }
