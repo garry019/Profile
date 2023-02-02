@@ -4,11 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './components/Home.js'
-import About from './components/About'
-import Portfolio from './components/Portfolio'
-import Contact from './components/Contact';
-
-
+/* import Decor_1 from './images/decor-1.svg' */
 /* import { useDispatch, useSelector } from 'react-redux';
 import { Incrementar, ChangeDescription } from './reducers/itemReducer'; */
 
@@ -33,12 +29,8 @@ function App() {
         
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='/home' element={<Home />} />
-          <Route exact path='/about-me' element={<About />} />
-          <Route exact path='/portfolio' element={<Portfolio />} />
-          <Route exact path='/contact' element={<Contact />} />
         </Routes>
-
+        
         <Footer />
       </div>
     </BrowserRouter>

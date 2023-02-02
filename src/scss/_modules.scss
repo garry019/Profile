@@ -1,44 +1,18 @@
-@mixin home-module{
-    background: map-get($map: $theme-colors, $key: "main");
-    color: #ffffff;
+
+
+.fiber-module{
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 0;
+
     h1{
-        font-family: $main-font;
-        position: relative;
-        z-index: 2;
-        opacity: 1;
-        small{
-            opacity: 1;
-            font-family: $sub-font;
-            font-size: 0.3em;
-            color: white;
-        }
-    }
-    .btn{
-        opacity: 1;
-        background-color: white;
-        border: none;
-        color: map-get($map: $theme-colors, $key: "main");
-        font-family: $sub-font;
-        letter-spacing: 2px;
-        position: relative;
-        z-index: 2;
-        transition: 0.25s ease all;
-        &:hover{
-            transform: scale(1.5);
-        }
-    }
-    .decor-1{
-        width: 100%;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        opacity: 1;
+        color: gray;
     }
 }
 
 .module{
     min-height: 100vh;
+    z-index: 1 !important;
 }
 
 .module h1{
@@ -63,18 +37,12 @@
     color: white;
 }
 
-#home{
-    @include home-module;
-}
-#loading-page{
-    @include home-module;
-}
-#home.row > *{
-    padding-left: 0;
-    padding-right: 0;
-}
-
 @media (min-width: 576px) { 
+
+    .module{
+        min-height: 100vh;
+    }
+
     .module h1{
         line-height: 0.5;
     }

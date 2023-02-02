@@ -1,23 +1,44 @@
 nav{
-    background-color: transparent;
+    background-color: rgba($main-dark, $alpha: .5);
     text-align: center;
     opacity: 1;
+    z-index: 0;
+    backdrop-filter: blur(5px);
+
     ul{
         background-color: transparent;
         list-style: none;
         margin: 0 auto;
         padding: 15px 0 15px 0;
         text-align: center;
+
         li{
             font-family: $main-font;
             display: inline-flex;
             color: #fff;
             margin: 0 15px 0 15px;
             text-align: center;
+
+            a{
+                color: white;
+
+                &:hover{
+                    color: #ff8243;
+                }
+            }
         }
+        
     }
 
     .active{
         color: white;
+    }
+
+    .main-link{
+        color: white;
+
+        &:hover{
+            color: #ff8243;
+        }
     }
 }

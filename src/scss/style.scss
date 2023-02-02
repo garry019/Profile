@@ -1,6 +1,10 @@
-@font-face {
+/* @font-face {
     font-family: 'myFontBold';
     src: url("../fonts/brandon-grotesque-black.otf") format("truetype");
+} */
+@font-face {
+    font-family: 'myFontBold';
+    src: url("../fonts/Orbitron-Medium.ttf");
 }
 @font-face {
     font-family: 'myFontLight';
@@ -14,13 +18,19 @@ $theme-colors:(
 );
 
 body{
-    background-color: aliceblue;
+    background-color: $main-dark;
     text-align: center;
     font-family: 'myFontBold';
     transition: transform 1s ease-out;
 
     h1{
         text-transform: uppercase;
+
+        small{
+            font-family: 'myFontLight';
+            font-weight: 100;
+            text-transform: uppercase;
+        }
     }
 
     a{
@@ -33,11 +43,7 @@ body{
         }
     }
 }
-small{
-    font-family: 'myFontLight';
-    font-weight: 100;
-    text-transform: uppercase;
-}
+
 @import "./_navbar.scss";
 @import "./_buttons.scss";
 @import "./_modules.scss";
