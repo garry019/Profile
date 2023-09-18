@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Titles';
+    src: url(../Fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'SubTitles';
+    src: url(../Fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Text';
+    src: url(../Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
 html{
     background-color: #ffffff;
 
@@ -12,6 +24,7 @@ html{
         header{
             background-color: #000000;
             height: 50vh;
+
             nav{
                 background-color: #000000;
                 padding-left: 15px;
@@ -28,6 +41,13 @@ html{
                     a{
                         color: #ffffff;
                         text-decoration: none;
+                        font-family: Titles;
+                        letter-spacing: 1px;
+
+                        &:hover{
+                            color: #00dbde;
+                            text-shadow: 0 0 1px #00dbde;
+                        }
                     }
                 }
 
@@ -43,22 +63,32 @@ html{
                             text-decoration: none;
                             color: #ffffff;
                             font-weight: bold;
+                            font-family: Titles;
+                            letter-spacing: 1px;
+
+                            &:hover{
+                                color: #00dbde;
+                                text-shadow: 0 0 1px #00dbde;
+                            }
                         }
                     }
                 }
             }
             h1{
-                font-size: 6vw;
+                font-size: 4vw;
                 text-shadow: 4px 4px 0 #686d68;
-                line-height: 3vw;
+                line-height: 1em;
                 font-weight: bold;
                 text-align: center;
-                letter-spacing: 4px;
+                letter-spacing: 6px;
+                font-family: Titles;
                 small{
                     width: 100%;
-                    font-size: 2vw;
+                    font-size: 0.5em;
                     text-shadow:none;
                     font-weight: 100;
+                    color: #00dbde;
+                    text-shadow: 0 0 4px #00dbde;
                 }
             }
         }
@@ -72,14 +102,16 @@ section{
         text-align: center;
 
         h2{
+            font-family: SubTitles;
             font-size: 4em;
         }
     }
     .about{
         background-color: #00b8ff;
         p{
+            font-family: Text;
             color: #ffffff;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
     }
     .about-image{
@@ -90,6 +122,13 @@ section{
         p{
             color: #ffffff;
             font-size: 1.5em;
+            line-height: 0.7em;
+            font-family: SubTitles;
+
+            span{
+                font-size: 0.6em;
+                font-family: Text;
+            }
         }
     }
     .skills-image{

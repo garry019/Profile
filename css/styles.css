@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Titles";
+  src: url(../Fonts/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "SubTitles";
+  src: url(../Fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "Text";
+  src: url(../Fonts/Poppins/Poppins-ExtraLight.ttf);
+}
 html {
   background-color: #ffffff;
 }
@@ -27,6 +39,12 @@ html body header nav .logo {
 html body header nav .logo a {
   color: #ffffff;
   text-decoration: none;
+  font-family: Titles;
+  letter-spacing: 1px;
+}
+html body header nav .logo a:hover {
+  color: #00dbde;
+  text-shadow: 0 0 1px #00dbde;
 }
 html body header nav ul {
   margin: 0;
@@ -42,20 +60,29 @@ html body header nav ul li a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
+  font-family: Titles;
+  letter-spacing: 1px;
+}
+html body header nav ul li a:hover {
+  color: #00dbde;
+  text-shadow: 0 0 1px #00dbde;
 }
 html body header h1 {
-  font-size: 6vw;
+  font-size: 4vw;
   text-shadow: 4px 4px 0 #686d68;
-  line-height: 3vw;
+  line-height: 1em;
   font-weight: bold;
   text-align: center;
-  letter-spacing: 4px;
+  letter-spacing: 6px;
+  font-family: Titles;
 }
 html body header h1 small {
   width: 100%;
-  font-size: 2vw;
+  font-size: 0.5em;
   text-shadow: none;
   font-weight: 100;
+  color: #00dbde;
+  text-shadow: 0 0 4px #00dbde;
 }
 
 section .main-mod {
@@ -64,14 +91,16 @@ section .main-mod {
   text-align: center;
 }
 section .main-mod h2 {
+  font-family: SubTitles;
   font-size: 4em;
 }
 section .about {
   background-color: #00b8ff;
 }
 section .about p {
+  font-family: Text;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 section .about-image {
   background-color: #ed543c;
@@ -82,6 +111,12 @@ section .skills {
 section .skills p {
   color: #ffffff;
   font-size: 1.5em;
+  line-height: 0.7em;
+  font-family: SubTitles;
+}
+section .skills p span {
+  font-size: 0.6em;
+  font-family: Text;
 }
 section .skills-image {
   background-color: #15e9ce;
