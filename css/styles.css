@@ -87,7 +87,6 @@ html body header h1 small {
 
 section .main-mod {
   min-height: 50vh;
-  padding-top: 60px;
   text-align: center;
 }
 section .main-mod h2 {
@@ -96,6 +95,7 @@ section .main-mod h2 {
 }
 section .about {
   background-color: #00b8ff;
+  padding-top: 60px;
 }
 section .about p {
   font-family: Text;
@@ -104,9 +104,17 @@ section .about p {
 }
 section .about-image {
   background-color: #ed543c;
+  overflow: hidden;
+  height: 50vh;
+  padding: 0;
+}
+section .about-image img {
+  position: relative;
+  top: -80px;
 }
 section .skills {
   background-color: #32cc33;
+  padding-top: 60px;
 }
 section .skills p {
   color: #ffffff;
@@ -120,6 +128,13 @@ section .skills p span {
 }
 section .skills-image {
   background-color: #15e9ce;
+  overflow: hidden;
+  height: 50vh;
+  padding: 0;
+}
+section .skills-image img {
+  position: relative;
+  top: -80px;
 }
 
 #Web {
@@ -135,15 +150,17 @@ section .skills-image {
 }
 
 #Certifications {
-  min-height: 50vh;
   padding-top: 60px;
   background-color: #ed543c;
+  font-family: SubTitles;
+  color: #ffffff;
 }
 
 #Contact {
   min-height: 40vh;
   padding-top: 60px;
   background-color: #000000;
+  font-family: SubTitles;
 }
 #Contact h2 {
   color: #ffffff;
@@ -160,4 +177,27 @@ footer {
   color: #ffffff;
   text-align: center;
   font-family: Text;
+  padding: 15px;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer ul li a:hover {
+  color: #00dbde;
+  text-shadow: 0 0 1px #00dbde;
+}
+footer .copy {
+  font-size: 0.7em;
 }/*# sourceMappingURL=styles.css.map */
