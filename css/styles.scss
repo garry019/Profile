@@ -2,10 +2,10 @@ html{
     background-color: #ffffff;
 
     body{
-        padding: 0 !important;
         h1{
             color: #ffffff;
         }
+
         header{
             background-color: #000000;
             height: 50vh;
@@ -13,6 +13,8 @@ html{
                 background-color: #000000;
                 padding-left: 15px;
                 padding-right: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 ul{
                     margin: 0;
                     padding: 0;
@@ -38,7 +40,7 @@ html{
                 letter-spacing: 4px;
                 small{
                     width: 100%;
-                    font-size: 2vw;
+                    font-size: 1vw;
                     text-shadow:none;
                     font-weight: 100;
                 }
@@ -46,4 +48,37 @@ html{
         }
 
     }
+}
+section{
+    .main-mod{
+        min-height: 50vh;
+    }
+    .about{
+        background-color: #00b8ff;
+    }
+    .about-image{
+        background-color: #ed543c;
+    }
+    .skills{
+        background-color: #32cc33;
+    }
+    .skills-image{
+        background-color: #15e9ce;
+    }
+}
+#Web{
+    min-height: 100vh;
+    padding-top: 60px;
+}
+#Games{
+    min-height: 100vh;
+    padding-top: 60px;
+}
+#Contact{
+    min-height: 100vh;
+    padding-top: 60px;
+}
+footer{
+    background-color: #000000;
+    color: #ffffff;
 }

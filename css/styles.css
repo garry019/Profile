@@ -1,9 +1,6 @@
 html {
   background-color: #ffffff;
 }
-html body {
-  padding: 0 !important;
-}
 html body h1 {
   color: #ffffff;
 }
@@ -15,6 +12,8 @@ html body header nav {
   background-color: #000000;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 html body header nav ul {
   margin: 0;
@@ -41,7 +40,43 @@ html body header h1 {
 }
 html body header h1 small {
   width: 100%;
-  font-size: 2vw;
+  font-size: 1vw;
   text-shadow: none;
   font-weight: 100;
+}
+
+section .main-mod {
+  min-height: 50vh;
+}
+section .about {
+  background-color: #00b8ff;
+}
+section .about-image {
+  background-color: #ed543c;
+}
+section .skills {
+  background-color: #32cc33;
+}
+section .skills-image {
+  background-color: #15e9ce;
+}
+
+#Web {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+#Games {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+#Contact {
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
 }/*# sourceMappingURL=styles.css.map */
