@@ -4,6 +4,9 @@ html {
 html body h1 {
   color: #ffffff;
 }
+html body h2 {
+  color: #ffffff;
+}
 html body header {
   background-color: #000000;
   height: 50vh;
@@ -14,6 +17,16 @@ html body header nav {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+html body header nav .logo {
+  width: 200px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+html body header nav .logo a {
+  color: #ffffff;
+  text-decoration: none;
 }
 html body header nav ul {
   margin: 0;
@@ -31,7 +44,7 @@ html body header nav ul li a {
   font-weight: bold;
 }
 html body header h1 {
-  font-size: 4vw;
+  font-size: 6vw;
   text-shadow: 4px 4px 0 #686d68;
   line-height: 3vw;
   font-weight: bold;
@@ -40,22 +53,35 @@ html body header h1 {
 }
 html body header h1 small {
   width: 100%;
-  font-size: 1vw;
+  font-size: 2vw;
   text-shadow: none;
   font-weight: 100;
 }
 
 section .main-mod {
   min-height: 50vh;
+  padding-top: 60px;
+  text-align: center;
+}
+section .main-mod h2 {
+  font-size: 4em;
 }
 section .about {
   background-color: #00b8ff;
+}
+section .about p {
+  color: #ffffff;
+  font-size: 1.5em;
 }
 section .about-image {
   background-color: #ed543c;
 }
 section .skills {
   background-color: #32cc33;
+}
+section .skills p {
+  color: #ffffff;
+  font-size: 1.5em;
 }
 section .skills-image {
   background-color: #15e9ce;
@@ -64,16 +90,19 @@ section .skills-image {
 #Web {
   min-height: 100vh;
   padding-top: 60px;
+  background-color: #000000;
 }
 
 #Games {
   min-height: 100vh;
   padding-top: 60px;
+  background-color: #686d68;
 }
 
 #Contact {
   min-height: 100vh;
   padding-top: 60px;
+  background-color: #9ba19b;
 }
 
 footer {
