@@ -76,12 +76,14 @@ html{
             }
             h1{
                 font-size: 4vw;
-                text-shadow: 4px 4px 0 #686d68;
                 line-height: 1em;
                 font-weight: bold;
                 text-align: center;
                 letter-spacing: 6px;
                 font-family: Titles;
+                color: transparent;
+                -webkit-text-stroke: 1px #00dbde;
+
                 small{
                     width: 100%;
                     font-size: 0.5em;
@@ -89,6 +91,7 @@ html{
                     font-weight: 100;
                     color: #00dbde;
                     text-shadow: 0 0 4px #00dbde;
+                    -webkit-text-stroke: 0;
                 }
             }
         }
@@ -126,7 +129,7 @@ section{
     }
     .skills{
         background-color: #32cc33;
-        padding-top: 60px;
+
         p{
             color: #ffffff;
             font-size: 1.5em;
@@ -137,6 +140,11 @@ section{
                 font-size: 0.6em;
                 font-family: Text;
             }
+        }
+
+        .skillsText{
+            font-size: 1em;
+            line-height: 1;
         }
     }
     .skills-image{
@@ -151,9 +159,36 @@ section{
     }
 }
 #Web{
-    min-height: 100vh;
     padding-top: 60px;
     background-color: #000000;
+
+    .web-title{
+        max-height: 30px;
+        h2{
+            line-height: 0.5;
+            small{
+                font-size: 0.5em;
+                color: #00dbde;
+            }
+        }
+    }
+
+    .web-mod{
+        text-align: center;
+        color: white;
+        min-height: 300px;
+
+        .web-mod-item{
+            padding-left: 60px;
+            padding-right: 60px;
+            &:hover{
+                h3{
+                    color: #00dbde;
+                }
+            }
+        }
+    }
+
 }
 #Games{
     min-height: 100vh;

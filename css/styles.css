@@ -69,12 +69,13 @@ html body header nav ul li a:hover {
 }
 html body header h1 {
   font-size: 4vw;
-  text-shadow: 4px 4px 0 #686d68;
   line-height: 1em;
   font-weight: bold;
   text-align: center;
   letter-spacing: 6px;
   font-family: Titles;
+  color: transparent;
+  -webkit-text-stroke: 1px #00dbde;
 }
 html body header h1 small {
   width: 100%;
@@ -83,6 +84,7 @@ html body header h1 small {
   font-weight: 100;
   color: #00dbde;
   text-shadow: 0 0 4px #00dbde;
+  -webkit-text-stroke: 0;
 }
 
 section .main-mod {
@@ -114,7 +116,6 @@ section .about-image img {
 }
 section .skills {
   background-color: #32cc33;
-  padding-top: 60px;
 }
 section .skills p {
   color: #ffffff;
@@ -125,6 +126,10 @@ section .skills p {
 section .skills p span {
   font-size: 0.6em;
   font-family: Text;
+}
+section .skills .skillsText {
+  font-size: 1em;
+  line-height: 1;
 }
 section .skills-image {
   background-color: #15e9ce;
@@ -138,9 +143,30 @@ section .skills-image img {
 }
 
 #Web {
-  min-height: 100vh;
   padding-top: 60px;
   background-color: #000000;
+}
+#Web .web-title {
+  max-height: 30px;
+}
+#Web .web-title h2 {
+  line-height: 0.5;
+}
+#Web .web-title h2 small {
+  font-size: 0.5em;
+  color: #00dbde;
+}
+#Web .web-mod {
+  text-align: center;
+  color: white;
+  min-height: 300px;
+}
+#Web .web-mod .web-mod-item {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+#Web .web-mod .web-mod-item:hover h3 {
+  color: #00dbde;
 }
 
 #Games {
