@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.da0230d0.css",
-    "main.js": "/profile/static/js/main.1a9d1900.js",
+    "main.css": "/profile/static/css/main.f8edea56.css",
+    "main.js": "/profile/static/js/main.23a7648f.js",
     "static/media/mundo-femsa.jpg": "/profile/static/media/mundo-femsa.3fb37419545f00a81e02.jpg",
     "static/media/young-accesorios.jpg": "/profile/static/media/young-accesorios.535e781fa8eb632ee08d.jpg",
     "static/media/cultura-camper.jpg": "/profile/static/media/cultura-camper.3170e550f681106fd327.jpg",
@@ -15,11 +15,11 @@
     "static/media/Poppins-Bold.ttf": "/profile/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/DancingScript-Bold.ttf": "/profile/static/media/DancingScript-Bold.57bdbb733ef4ac8e2df3.ttf",
     "index.html": "/profile/index.html",
-    "main.da0230d0.css.map": "/profile/static/css/main.da0230d0.css.map",
-    "main.1a9d1900.js.map": "/profile/static/js/main.1a9d1900.js.map"
+    "main.f8edea56.css.map": "/profile/static/css/main.f8edea56.css.map",
+    "main.23a7648f.js.map": "/profile/static/js/main.23a7648f.js.map"
   },
   "entrypoints": [
-    "static/css/main.da0230d0.css",
-    "static/js/main.1a9d1900.js"
+    "static/css/main.f8edea56.css",
+    "static/js/main.23a7648f.js"
   ]
 }
