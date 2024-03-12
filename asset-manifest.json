@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/profile/static/css/main.7e67cc2b.css",
-    "main.js": "/profile/static/js/main.871a5ddc.js",
+    "main.css": "/profile/static/css/main.126a49f8.css",
+    "main.js": "/profile/static/js/main.12c5239e.js",
     "static/media/mundo-femsa.jpg": "/profile/static/media/mundo-femsa.3fb37419545f00a81e02.jpg",
     "static/media/young-accesorios.jpg": "/profile/static/media/young-accesorios.535e781fa8eb632ee08d.jpg",
     "static/media/cultura-camper.jpg": "/profile/static/media/cultura-camper.3170e550f681106fd327.jpg",
     "static/media/unreal-engine-realism.jpg": "/profile/static/media/unreal-engine-realism.eab5310b7d16ac6bfe67.jpg",
     "static/media/eco-power.jpg": "/profile/static/media/eco-power.f8bec0a6ecd40a14ba6e.jpg",
     "static/media/3D-pacman.jpg": "/profile/static/media/3D-pacman.bc4c11691bfa868b12ed.jpg",
+    "static/media/CV_Gabriel_Calderón_Burgón.pdf": "/profile/static/media/CV_Gabriel_Calderón_Burgón.1aad5efd8fc5469f8c29.pdf",
     "static/media/crm-developer.jpg": "/profile/static/media/crm-developer.9a749d061fc3f68d3c93.jpg",
     "static/media/evakey.jpg": "/profile/static/media/evakey.e8a5b834d004c91cd6d5.jpg",
     "static/media/Poppins-ExtraLight.ttf": "/profile/static/media/Poppins-ExtraLight.333cb30c20e31999802a.ttf",
@@ -17,11 +18,11 @@
     "index.html": "/profile/index.html",
     "static/media/clipboard-check.svg": "/profile/static/media/clipboard-check.6e83d55d76e4a08e65bb5cfb7948b7ac.svg",
     "static/media/clipboard.svg": "/profile/static/media/clipboard.e63074245c32245b18ecfbb8f3ce486c.svg",
-    "main.7e67cc2b.css.map": "/profile/static/css/main.7e67cc2b.css.map",
-    "main.871a5ddc.js.map": "/profile/static/js/main.871a5ddc.js.map"
+    "main.126a49f8.css.map": "/profile/static/css/main.126a49f8.css.map",
+    "main.12c5239e.js.map": "/profile/static/js/main.12c5239e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e67cc2b.css",
-    "static/js/main.871a5ddc.js"
+    "static/css/main.126a49f8.css",
+    "static/js/main.12c5239e.js"
   ]
 }
